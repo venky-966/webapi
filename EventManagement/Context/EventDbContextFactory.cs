@@ -9,7 +9,7 @@ namespace EventManagement.Context
         public EventDbContext CreateDbContext(string[] args)
         {
             var optionsBuilder = new DbContextOptionsBuilder<EventDbContext>();
-            optionsBuilder.UseSqlServer("Server=.;Database=EventDb;Trusted_Connection=True;TrustServerCertificate=True");
+            optionsBuilder.UseSqlServer("Server=.;Database=EventDb3;Trusted_Connection=True;TrustServerCertificate=True");
 
             return new EventDbContext(optionsBuilder.Options);
         }

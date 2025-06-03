@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\irfanulla.mohammad\\.nuget\\packages\\": {}
+    "C:\\Users\\venkata.allavarapu\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\irfanulla.mohammad\\Downloads\\Event\\DAL\\DAL.csproj",
+      "projectUniqueName": "C:\\Users\\venkata.allavarapu\\OneDrive - Nihilent Limited\\Documents\\EventManagementApplication\\DAL\\DAL.csproj",
       "projectName": "DAL",
-      "projectPath": "C:\\Users\\irfanulla.mohammad\\Downloads\\Event\\DAL\\DAL.csproj",
-      "packagesPath": "C:\\Users\\irfanulla.mohammad\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\irfanulla.mohammad\\Downloads\\Event\\DAL\\obj\\",
+      "projectPath": "C:\\Users\\venkata.allavarapu\\OneDrive - Nihilent Limited\\Documents\\EventManagementApplication\\DAL\\DAL.csproj",
+      "packagesPath": "C:\\Users\\venkata.allavarapu\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\venkata.allavarapu\\OneDrive - Nihilent Limited\\Documents\\EventManagementApplication\\DAL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\irfanulla.mohammad\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\venkata.allavarapu\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"

@@ -1,11 +1,23 @@
 {
   "Version": 1,
-  "Hash": "ljNtPhivnyCw28g9YkAIluVX4C/XPEzG6kuNyAC8mHM=",
+  "Hash": "/mgoILJl1RicyIORvBqfbjZ83Isoa0gyRJk+7k8kYgc=",
   "Source": "ServiceLayer",
   "BasePath": "_content/ServiceLayer",
   "Mode": "Default",
   "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "C:\\Users\\venkata.allavarapu\\OneDrive - Nihilent Limited\\Documents\\EventManagementApplication\\EventManagement\\EventManagement.csproj",
+      "Version": 2,
+      "Source": "EventManagement",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
+    }
+  ],
   "DiscoveryPatterns": [],
   "Assets": []
 }

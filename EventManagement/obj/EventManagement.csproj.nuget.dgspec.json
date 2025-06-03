@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\irfanulla.mohammad\\Downloads\\Event\\EventManagement\\EventManagement.csproj": {}
+    "C:\\Users\\venkata.allavarapu\\OneDrive - Nihilent Limited\\Documents\\EventManagementApplication\\EventManagement\\EventManagement.csproj": {}
   },
   "projects": {
-    "C:\\Users\\irfanulla.mohammad\\Downloads\\Event\\EventManagement\\EventManagement.csproj": {
+    "C:\\Users\\venkata.allavarapu\\OneDrive - Nihilent Limited\\Documents\\EventManagementApplication\\EventManagement\\EventManagement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\irfanulla.mohammad\\Downloads\\Event\\EventManagement\\EventManagement.csproj",
+        "projectUniqueName": "C:\\Users\\venkata.allavarapu\\OneDrive - Nihilent Limited\\Documents\\EventManagementApplication\\EventManagement\\EventManagement.csproj",
         "projectName": "EventManagement",
-        "projectPath": "C:\\Users\\irfanulla.mohammad\\Downloads\\Event\\EventManagement\\EventManagement.csproj",
-        "packagesPath": "C:\\Users\\irfanulla.mohammad\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\irfanulla.mohammad\\Downloads\\Event\\EventManagement\\obj\\",
+        "projectPath": "C:\\Users\\venkata.allavarapu\\OneDrive - Nihilent Limited\\Documents\\EventManagementApplication\\EventManagement\\EventManagement.csproj",
+        "packagesPath": "C:\\Users\\venkata.allavarapu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\venkata.allavarapu\\OneDrive - Nihilent Limited\\Documents\\EventManagementApplication\\EventManagement\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\irfanulla.mohammad\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\venkata.allavarapu\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -78,6 +78,9 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

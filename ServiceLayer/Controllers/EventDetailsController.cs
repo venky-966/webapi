@@ -1,6 +1,8 @@
 using EventManagement.Model;
 using EventManagement.Repository;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
+
 
 namespace ServiceLayer.Controllers
 {
@@ -15,6 +17,7 @@ namespace ServiceLayer.Controllers
             _eventRepository = eventRepository;
         }
 
+        [Authorize(Roles = "Admin,Participant")]
         [HttpGet]
         public IActionResult GetAll()
         {
@@ -23,6 +26,7 @@ namespace ServiceLayer.Controllers
         }
 
         [HttpGet("{id}")]
+          [Authorize(Roles = "Admin,Participant")]
         public IActionResult GetById(int id)
         {
             var evt = _eventRepository.Get(id);
@@ -31,6 +35,7 @@ namespace ServiceLayer.Controllers
         }
 
         [HttpPost]
+       [Authorize(Roles = "Admin")]
         public IActionResult Create(EventDetails eventDetails)
         {
             _eventRepository.Add(eventDetails);
@@ -39,6 +44,7 @@ namespace ServiceLayer.Controllers
         }
 
         [HttpPut("{id}")]
+        [Authorize(Roles = "Admin")]
         public IActionResult Update(int id, EventDetails eventDetails)
         {
             if (id != eventDetails.EventId) return BadRequest();
@@ -47,18 +53,19 @@ namespace ServiceLayer.Controllers
             return NoContent();
         }
 
-       [HttpDelete("{id}")]
+        [HttpDelete("{id}")]
+        [Authorize(Roles = "Admin")]
 public IActionResult Delete(int id)
-{
-    var evt = _eventRepository.Get(id);
-    if (evt == null)
-        return NotFound();
+        {
+            var evt = _eventRepository.Get(id);
+            if (evt == null)
+                return NotFound();
 
-    _eventRepository.Delete(id);
-    _eventRepository.Save();
+            _eventRepository.Delete(id);
+            _eventRepository.Save();
 
-    return NoContent();
-}
+            return NoContent();
+        }
 
     }
 }

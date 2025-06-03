@@ -2,9 +2,11 @@ using EventManagement.Model;
 using EventManagement.Repository;
 using Microsoft.AspNetCore.Mvc;
 using System.Linq;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ServiceLayer.Controllers
 {
+   
     [Route("api/ParticipantEventDetails")]
     [ApiController]
     public class ParticipantEventDetailsController : ControllerBase
@@ -17,12 +19,14 @@ namespace ServiceLayer.Controllers
         }
 
         [HttpGet]
+         [Authorize(Roles = "Admin,Participant")]
         public IActionResult GetAll()
         {
             return Ok(_repo.GetAll());
         }
 
         [HttpGet("{id}")]
+         [Authorize(Roles = "Admin,Participant")]
         public IActionResult GetById(int id)
         {
             var participant = _repo.Get(id);
@@ -31,6 +35,7 @@ namespace ServiceLayer.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "Admin")]
         public IActionResult Create(ParticipantEventDetails participant)
         {
             // Prevent duplicate registration for same user and event
@@ -47,6 +52,7 @@ namespace ServiceLayer.Controllers
         }
 
         [HttpPut("{id}")]
+        [Authorize(Roles = "Admin")]
         public IActionResult Update(int id, ParticipantEventDetails participant)
         {
             if (id != participant.Id) return BadRequest();
@@ -56,6 +62,7 @@ namespace ServiceLayer.Controllers
         }
 
         [HttpDelete("{id}")]
+        [Authorize(Roles = "Admin")]
         public IActionResult Delete(int id)
         {
             _repo.Delete(id);
